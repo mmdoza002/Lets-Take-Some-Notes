@@ -8,8 +8,8 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use('/api', notesRoute);
 app.use('/', indexRoute);
+app.use('/api', notesRoute);
 
 app.listen(PORT, () => {
     console.log(`App listening at http://localhost:${PORT} 🚀`);
