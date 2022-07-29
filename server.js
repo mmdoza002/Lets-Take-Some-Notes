@@ -4,11 +4,6 @@ const notesRoutes = require('./routes/api/notes');
 const PORT = 3001;
 const app = express();
 
-// const app = express();
-// const PORT = process.env.PORT || 3001;
-// const notesRoutes = require('./Main/routes/api/notes');
-// const indexRoutes = require('./Main/routes/html/index');
-
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
